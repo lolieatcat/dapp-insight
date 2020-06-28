@@ -36,7 +36,7 @@ let messageModel = `
 
       --上局结果--
 中奖号码:     $WIN_NUMBER$
-奖金:         $PAID_PRIZE$
+奖金:         $PAID_PRIZE$ WAN
 中奖人数:     $WINNERS$
 
 欢迎使用轻钱包参与Jack's Pot无损彩票，赢取大额奖金
@@ -148,3 +148,7 @@ async function getJacksPotInfos() {
 }
 
 getJacksPotInfos();
+
+module.exports = {
+  getJacksPotInfos
+};
