@@ -1,6 +1,159 @@
-
 .normal {
-  background: #2c0330;
-  color: white;
-  padding: 40px;
+  color               : white;
+  padding             : 40px;
+  background-image    : url('../public/jackpot_bg.jpg');
+  background-repeat   : no-repeat;
+  background-size     : 100% 100%;
+  -moz-background-size: 100% 100%;
+  width               : 600px;
+  height              : 600px;
+}
+
+.title {
+  font-size  : 26px;
+  font-family: Noto Sans S Chinese;
+  font-weight: 900;
+  color      : rgba(247, 235, 139, 1);
+  position   : absolute;
+  left       : 368px;
+  top        : 128px;
+}
+
+.title2 {
+  font-size  : 50px;
+  font-family: Noto Sans S Chinese;
+  font-weight: 900;
+  color      : rgba(247, 235, 139, 1);
+  position   : absolute;
+  left       : 363px;
+  top        : 158px;
+}
+
+.date {
+  font-size  : 22px;
+  font-family: Noto Sans S Chinese;
+  font-weight: 400;
+  color      : rgba(255, 255, 255, 1);
+  position   : absolute;
+  left       : 370px;
+  top        : 266px;
+}
+
+.subTitle {
+  font-size: 28px;
+  font-family: Noto Sans S Chinese;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 89px;
+  top: 386px;
+}
+
+.subTitle2 {
+  font-size: 28px;
+  font-family: Noto Sans S Chinese;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  left: 406px;
+  top: 386px;
+}
+
+.t1 {
+  font-size: 20px;
+  font-family: Noto Sans S Chinese;
+  font-weight: 400;
+  color: rgba(255,255,255,1);
+  line-height: 60px;
+  position: absolute;
+  left: 89px;
+  top: 429px;
+}
+
+.t2 {
+  font-size:20px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 87px;
+  top: 469px;
+}
+
+.t3 {
+  font-size:20px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 87px;
+  top: 509px;
+}
+
+.t4 {
+  font-size:20px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 87px;
+  top: 549px;
+}
+
+.t5 {
+  font-size:20px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 409px;
+  top: 429px;
+}
+
+.t6 {
+  font-size:20px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 409px;
+  top: 469px;
+}
+
+.t7 {
+  font-size:20px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 409px;
+  top: 509px;
+}
+
+.t8 {
+  font-size:16px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 87px;
+  top: 600px;
+}
+
+.t9 {
+  font-size:16px;
+  font-family:Noto Sans S Chinese;
+  font-weight:400;
+  color:rgba(255,255,255,1);
+  line-height:60px;
+  position: absolute;
+  left: 87px;
+  top: 624px;
 }
