@@ -6,7 +6,7 @@
   background-size     : 100% 100%;
   -moz-background-size: 100% 100%;
   width               : 600px;
-  height              : 600px;
+  height              : 614px;
 }
 
 .title {
@@ -144,7 +144,7 @@
   line-height:60px;
   position: absolute;
   left: 87px;
-  top: 600px;
+  top: 604px;
 }
 
 .t9 {
@@ -155,5 +155,5 @@
   line-height:60px;
   position: absolute;
   left: 87px;
-  top: 624px;
+  top: 628px;
 }

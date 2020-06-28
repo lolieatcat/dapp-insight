@@ -46,8 +46,8 @@ export default class Index extends React.Component {
         <div className={styles.t5}>中奖号码：{this.state.winCode}</div>
         <div className={styles.t6}>奖&#12288;&#12288;金：{this.state.paidPrize} WAN</div>
         <div className={styles.t7}>中奖人数：{this.state.winCount}</div>
-        <div className={styles.t8}> - 欢迎使用轻钱包参与Jack's Pot无损彩票，赢取大额奖金</div>
-        <div className={styles.t9}> - https://wanchain.org/getstarted</div>
+        <div className={styles.t8}>欢迎使用轻钱包参与Jack's Pot无损彩票，赢取大额奖金</div>
+        <div className={styles.t9}>https://wanchain.org/getstarted</div>
       </div>
     );
   }
