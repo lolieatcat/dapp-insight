@@ -1,39 +1,48 @@
-const TelegramBot = require('node-telegram-bot-api');
+// const TelegramBot = require('node-telegram-bot-api');
 const schedule = require('node-schedule');
 const { token, chatId } = require('./config');
 const jackspotAbi = require('./jackspot-abi.json');
 const { getWeb3, isSwitchFinish } = require('./web3switch');
+const sleep = require('ko-sleep');
 // replace the value below with the Telegram token you receive from @BotFather
 // Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(token, { polling: true });
+// const bot = new TelegramBot(token, { polling: true });
 
 // * * * * * *
 // second minute hour day month dayOfWeek
-const robotSchedules = () => {
-    // update: The settlement robot calls this function daily to update the capital pool and settle the pending refund.
-    schedule.scheduleJob('0 0 0 * * *', async () => {
-        let msg = await getJacksPotInfos();
-        console.log(msg);
-        await bot.sendMessage(chatId, msg);
-    });
-}
+// const robotSchedules = () => {
+//     // update: The settlement robot calls this function daily to update the capital pool and settle the pending refund.
+//     schedule.scheduleJob('0 0 0 * * *', async () => {
+//         let msg = await getJacksPotInfos();
+//         console.log(msg);
+//         await bot.sendMessage(chatId, msg);
+//     });
+// }
 
-robotSchedules();
+// robotSchedules();
 
 let messageModel = `
-🌟 Jack's Pot Insight $DATE$ 🌟
-  Jackpot:    $PRIZE_POOL$ WAN
-  Pool:         $TOTAL_POOL$ WAN
-  Players:     $TOTAL_PLAYER$
-  Tickets:     $TOTAL_TICKETS$
 
-🔍 Last Round 🔍
-  Win Number: $WIN_NUMBER$
-  Prize:            $PAID_PRIZE$
-  Winners:       $WINNERS$
 
-🚀🚀🚀🚀🚀
-( Welcome to play Jack's Pot in Wan Wallet DApps or in website https://jackspot.finnexus.app/ )`
+
+万维链DApp简报之Jack's Pot
+                -- $DATE$ 
+
+      --最新情况--
+奖金池:       $PRIZE_POOL$ WAN
+总资金池:     $TOTAL_POOL$ WAN
+玩家数量:     $TOTAL_PLAYER$
+号码覆盖:     $TOTAL_TICKETS$
+
+      --上局结果--
+中奖号码:     $WIN_NUMBER$
+奖金:         $PAID_PRIZE$
+中奖人数:     $WINNERS$
+
+欢迎使用轻钱包参与Jack's Pot无损彩票，赢取大额奖金
+
+
+`
 
 let messageModel2 = `
 Hello, everyone! 
@@ -138,3 +147,4 @@ async function getJacksPotInfos() {
     return msg;
 }
 
+getJacksPotInfos();
