@@ -40,7 +40,7 @@ let messageModel = `
 中奖人数:     $WINNERS$
 
 欢迎使用轻钱包参与Jack's Pot无损彩票，赢取大额奖金
-
+https://wanchain.org/getstarted
 
 `
 
