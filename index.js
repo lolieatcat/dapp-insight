@@ -31,7 +31,7 @@ let messageModel = `
       --最新情况--
 奖金池:       $PRIZE_POOL$ WAN
 总资金池:     $TOTAL_POOL$ WAN
-玩家数量:     $TOTAL_PLAYER$
+当前人数:     $TOTAL_PLAYER$
 号码覆盖:     $TOTAL_TICKETS$
 
       --上局结果--
