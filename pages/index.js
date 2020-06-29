@@ -18,6 +18,15 @@ export default class Index extends React.Component {
     };
   }
   async componentDidMount() {
+    try {
+      await this.update();
+    } catch (err) {
+      console.log(err);
+      setTimeout(this.update, 100);
+    }
+  }
+
+  update = async () => {
     let ret = await getJacksPotInfos();
     this.setState({
       date: ret.date,
