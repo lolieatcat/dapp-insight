@@ -57,6 +57,7 @@ export default class Index extends React.Component {
         <div className={styles.t7}>中奖人数：{this.state.winCount}</div>
         <div className={styles.t8}>欢迎使用轻钱包参与Jack's Pot无损彩票，赢取大额奖金</div>
         <div className={styles.t9}>https://wanchain.org/getstarted</div>
+        <img className={styles.qrcode} src={require('../public/qrcode.png')}/>
       </div>
     );
   }

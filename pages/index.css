@@ -157,3 +157,10 @@
   left: 87px;
   top: 628px;
 }
+
+.qrcode {
+  position: absolute;
+  width: 100px;
+  top: 583px;
+  left: 570px;
+}
